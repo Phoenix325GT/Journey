@@ -17,29 +17,29 @@
     transform: scale(1.01);   
 }
 /* Global background image for the whole page */
-body::before {
-    content: ''; /* Required for the pseudo-element */
-    position: fixed; /* The image stays fixed in the background */
+/* Change this in myFile.css */
+.home-bg::before {
+    content: ''; 
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%; 
     height: 100%;
-    background-image: url('bg.jpg'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the image */
-    opacity: 0.7; /* Controls the transparency of the background image */
-    z-index: -1; /* Puts the background image behind everything */
+    background-image: url('bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0.7; 
+    z-index: -1; 
 }
 
-/* Additional global styles */
+/* Base body style for all pages */
 body {
     position: relative;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: rgba(255, 255, 255, 0.9); /* Optional: Adds a subtle overlay for better readability */
+    background-color: #f8f9fa; /* Light grey/white background for non-home pages */
 }
-
 /* Hero section with its own styles */
 .hero {
     height: 100vh; /* Full viewport height */
@@ -209,3 +209,4 @@ html {
 .navbar-nav .nav-link:hover {
     opacity: 1 !important;
 }
+
