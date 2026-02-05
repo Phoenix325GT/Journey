@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ameen Shaikh</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="myFile.css">
+    <style>
+        /* Glassmorphism Card Style */
+        .contact-glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+        }
+        
+        .contact-info-icon {
+            font-size: 1.5rem;
+            color: #007bff;
+            margin-right: 15px;
+            width: 30px;
+            text-align: center;
+        }
+
+        .form-control {
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            padding: 25px 15px;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+            border-color: #007bff;
+        }
+
+        textarea.form-control {
+            padding: 15px;
+        }
+
+        .social-links a {
+            font-size: 1.8rem;
+            margin-right: 20px;
+            color: #2c3e50;
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .social-links a:hover {
+            color: #007bff;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="myWebsite.html">Ameen Shaikh</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Skills.html">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="idk.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <section class="py-5" style="margin-top: 100px;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 font-weight-bold">Get In Touch</h2>
+                <p class="lead text-muted">Have a question or want to collaborate on a project?</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="contact-glass-card">
+                        <div class="row">
+                            <div class="col-md-5 mb-4 mb-md-0">
+                                <h3 class="mb-4">Contact Information</h3>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-envelope contact-info-icon"></i>
+                                    <span>phoenix325gt@gmail.com</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-map-marker-alt contact-info-icon"></i>
+                                    <span>Mumbai, India</span>
+                                </div>
+                                
+                                <h4 class="mt-5 mb-3">Follow My Journey</h4>
+                                <div class="social-links">
+                                    <a href="https://www.linkedin.com/in/mohd-ameen-shaikh" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/phoenix325gt" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <form action="https://formspree.io/f/mgolwzng" method="POST">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="_replyto" class="form-control" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4">
+        <p>&copy; 2026 Ameen Shaikh. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
